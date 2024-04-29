@@ -1,0 +1,43 @@
+Raihan Yusuf Sa'ari
+function tampilkanAngka() {
+  var list = document.getElementById("numbersList");
+  for (var i = 1; i <= 10; i++) {
+    var listItem = document.createElement("li");
+
+    if (i % 2 === 0) {
+      listItem.textContent = "Even: " + i;
+    } else {
+      listItem.textContent = "Odd: " + i;
+    }
+      list.appendChild(listItem);
+    }
+  }
+tampilkanAngka();Per
+
+------------------------------------------------------------------------------------
+
+(algoritma)
+tugas: menghitung luas dan keliling lingkaran
+
+1. menghitung luas dan keliling lingkaran
+  title = menghitung luas dan keliling lingkaran
+
+2. input input yang diperlukan untuk menghitung luas dan keliling lingkaran
+    let ... = 
+    let ... =
+    if ...
+    console ....
+
+3. perhitungan dari > menghitung luas dan keliling lingkaran
+    pi....
+
+4. untuk tampilkan hasil kalkulasi
+    show = output hasil dari menghitung luas dan keliling lingkaran
+
+
+(code)
+.......
+
+
+(hasil/output dari koding)
+screenshot aplikasi > inspect element > jika menggunakan console
