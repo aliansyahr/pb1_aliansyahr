@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Huruf Mutu</title>
+  </head>
+  <body>
+    <!-- huruf mutu: a,b,c,d,e
+        a = 80 s.d 100
+        b = 70 s.d 79
+        c = 60 s.d 69
+        d = 50 s.d 59
+        e = 0 s.d 49 -->
+
+    <h3>Belajar Huruf Mutu</h3>
+    <div id="nilai"></div>
+    <div id="hasil"></div>
+    <script>
+        let nilai = 40;
+        let hasil = "";
+        if (nilai >= 80 && nilai <= 100) {
+        hasil = "A";
+        } else if (nilai >= 70 && nilai <= 79){
+        hasil = "B"
+        } else if (nilai >= 60 && nilai<= 69){
+        hasil = "C"
+        } else if (nilai >= 50 && nilai <= 59){
+        hasil = "D"
+        } else if (nilai >= 0 && nilai<=49){
+        hasil = "E"
+        }
+
+
+
+        document.getElementById("nilai").innerHTML = "Nilai Anda : " + nilai;
+        document.getElementById("hasl").innerHTML = "Huruf Mutu : " + hasil;
+    </script>
+  </body>
+</html>
