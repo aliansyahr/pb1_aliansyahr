@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara penulisan Javascript</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Isi Content -->
+    <h1>penggunaan variable di JS</h1>
+
+    <!-- Variabel JS -->
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+    <h1>Tipe data number di JS</h1>
+
+    <!-- Tipe data Number-->
+    <div id="hasil"></div>
+
+    <!-- tipe data string -->
+    <h1>Tipe data string</h1>
+    <div id="string"></div>
+
+    <!-- tipe data array -->
+    <h1>Tipe data array</h1>
+    <div id="array"></div>
+
+    <!-- tipe data object -->
+    <h1>Tipe data object di JS</h1>
+    <div id="object"></div>
+
+    <!-- operator aritmatika -->
+    <h1>Penggunaan operator aritmatika di JS</h1>
+
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+
+    <!-- function -->
+
+    <h1>membuat function di JS</h1>
+    <h2>hacktiv8</h2>
+
+    <div id="function"></div>
+
+    <!-- event -->
+    <!-- onclick -->
+    <h1>mengenal event pada JS</h1>
+    <h2>hacktiv8</h2>
+
+    <!-- memberikan event pada element tombol -->
+    <button onclick="apaaja()">klik saya</button>
+    <div id="event"></div>
+
+    <!-- function+event -->
+    
+
+    <script>
+      // variabel JS
+      var nama = "workshop 4 days";
+      var lokasi = "online";
+
+      document.getElementById("nama").innerHTML = nama;
+      document.getElementById("lokasi").innerHTML = lokasi;
+
+      //tipe data Number
+      var angka = 80;
+
+      document.getElementById("hasil").innerHTML = angka;
+      // tipe data String
+      var kalimat = "belajar js di hacktiv8";
+      document.getElementById("string").innerHTML = kalimat;
+
+      // tipe data array
+      var transport = ["mobil", "motor", "pesawat", "kapal"];
+      document.getElementById("array").innerHTML = transport[1];
+      document.getElementById("array").innerHTML = transport[3];
+
+      // tipe data object
+      var manusia = {
+        nama: "aliansyah",
+        asal: "bandung",
+        usia: "24",
+      };
+      document.getElementById("object").innerHTML =
+        manusia.nama + " tinggal di " + manusia.asal;
+
+      // operator aritmatika
+      var bilangan1 = 6;
+      var bilangan2 = 2;
+
+      var penjumlahan = bilangan1 + bilangan2;
+      var pengurangan = bilangan1 - bilangan2;
+      var perkalian = bilangan1 * bilangan2;
+      var pembagian = bilangan1 / bilangan2;
+      var modulus = bilangan1 % bilangan2;
+
+      document.getElementById("penjumlahan").innerHTML = penjumlahan;
+      document.getElementById("pengurangan").innerHTML = pengurangan;
+      document.getElementById("perkalian").innerHTML = perkalian;
+      document.getElementById("pembagian").innerHTML = pembagian;
+      document.getElementById("modulus").innerHTML = modulus;
+
+      // function
+      function tampilkan_nama() {
+        return "hacktiv8 front end web development";
+      }
+
+      document.getElementById("function").innerHTML = tampilkan_nama();
+
+      // event
+      // membuat function tampilkanNama
+
+      function apaaja() {
+        document.getElementById("event").innerHTML = "<h5>hehehehe</h5>";
+      }
+
+    //   function+events
+    function hitungGrade (nilaiA){
+        let grade = ""
+        if (nilaiA >= 90){ 
+            grade = "A"
+        } else if (nilaiA >= 80){
+            grade = "B"
+        } else if (nilaiA >= 70){
+            grade = "C"
+        } else if (nilaiA >= 60){
+            grade = "D"
+        } else {
+            grade = "E"
+        }
+        return grade
+    }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pesan</title>
+</head>
+<body>
+    <label for="pesan">Pesan:</label>
+    <input type="text" id="pesanInput"><br>
+    <label for="hitung">Berapa Kali:</label>
+    <input type="number" id="hitungInput"><br>
+    <button onclick="cetakPesan()">Cetak!</button>
+    <ol id="text"></ol>
+
+    <script>
+        function cetakPesan() {
+            var pesan = document.getElementById("pesanInput").value;
+            var hitung = parseInt(document.getElementById("hitungInput").value);
+            var textList = document.getElementById("text");
+
+            
+            textList.innerHTML = "";
+
+            
+            if (isNaN(hitung) || hitung <= 0) {
+                alert("Mohon masukkan jumlah yang valid!");
+                return;
+            }
+
+            
+            for (var i = 0; i < hitung; i++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = pesan;
+                textList.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>
