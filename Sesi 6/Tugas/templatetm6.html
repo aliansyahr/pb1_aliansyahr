@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri 6</title>
+    <style>
+      .blink-red {
+        color: red;
+      }
+
+      .blink-green {
+        color: green;
+      }
+
+      .blink-blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="paragraf1" class="blink-red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <p id="paragraf2" class="blink-green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <p id="paragraf3" class="blink-blue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <script>
+      function blinkText() {
+        var blinkingElement1 = document.getElementById("paragraf1");
+        var blinkingElement2 = document.getElementById("paragraf2");
+        var blinkingElement3 = document.getElementById("paragraf3");
+
+        setInterval(function () {
+          blinkingElement1.classList.toggle("blink-red");
+          blinkingElement2.classList.toggle("blink-green");
+          blinkingElement3.classList.toggle("blink-blue");
+        }, 500);
+      }
+
+      blinkText();
+    </script>
+  </body>
+</html>
